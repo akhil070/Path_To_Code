@@ -41,7 +41,9 @@ public class Merge_two_sorted_arrays {
         }
     }
     public void MergeArrays(int[] arr1,int[] arr2){
-        // Time complexity is O(M*N)
+        // Time complexity is O(N*M+logn)
+        // O(logn time to search the postion in the 2nd array and M time to swap elements)
+        // This is can be further optimzed to O(M*N) time 
         Approach1(arr1,arr2);
     }
     public static void main(String[] args) {
